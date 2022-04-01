@@ -1,4 +1,4 @@
-#Read the contents of puzzles.csv both in Python and R and send the output of the terminal
+#Read the contents of puzzles.csv both in Python and send the output of the terminal
 
 import bz2
 import os
@@ -31,5 +31,5 @@ else:
     with bz2.open(bz2_filename, "rt") as filefrom, open(final_filename, "w") as fileto:
         fileto.write(filefrom.read())
     print("{} successfully decompressed into {}!".format(bz2_filename, final_filename))
-puzzles = pandas.read_csv(final_filename, names=header)
+puzzles = pandas.read_csv(final_filename, names = header)
 print(puzzles.head())
