@@ -13,7 +13,6 @@ header = ["PuzzleId", "FEN", "Moves",
           "Themes", "GameUrl"]
 
 final_filename = "puzzles.csv"
-
 if os.path.isfile(bz2_filename):
     print("File {} was already downloaded. Proceeding with decompress...".format(bz2_filename))
 
